@@ -1,37 +1,93 @@
 <!DOCTYPE html>
 <html> 
     <head>
-        <meta charset="UTF-8">
-        <title>Minha primeira página html</title>
+
+        <title>FRONT END</title>
     </head>
-
-    
-    <body>
+       <body>
         <header>
-            <!--Cabeçalho da página-->
-            <h3>Título</h3>
-            <p>descrição</p>
-            <nav>
-                <!--Navegação do site- MENU -->
-            </nav>
+            <div>
+                <img src="../imgs/logo_unitins.jpg">                  
+            </div>
+                <nav>
+                <!--Estrutura para menu não ordenado-->
+                    <ul>
+                        <li>
+                <!--Estrutura para adicionar links-->
+                            <a href="#">inicio</a>
+                        </li>
+                        <li>
+                            <a href="#">sobre</a>
+                        </li>
+                        <li>
+                            <a href="#">graduação</a>
+                <!--Estrutura lista dentro de outra lista-->
+                              <ul>
+                                <li>Direito</li>
+                                <li>Sistema de informação</li>
+                              </ul>
+                        </li>
+                    </ul>    
+                <!--Estrutura para menu ordenadao-->              
+                    <ol>
+                        <li>inicio</li>
+                        <li>sobre</li>
+                        <li>serviços</li>                    
+                    </ol>  
+                </nav>                           
         </header>
-        <main>
-            <!--BANNERS-->
-            <section>
-                <div>
-                    <h1>Titulo</h1>
-                    <p>Descrição</p>
-                </div>
-                <!--Imagem, texto...conteudos diversos-->
-            </section>
-        </main>
-        <footer>
-            <!--Rodapé do site-->>
-            <p>Informações gerais</p>
-        </footer>
+          <main>
+            <div>            
+                <img src="../imgs/banner.png" alt="banner"> <!--usa-se width="100%"> para caso a imagem passe do limite da tela-->
+            </div>
+          </main>
+        <section>            
+            <div>
+              <h1>PERFIL INSTITUCIONAL</h1> <!--titulo do paragrafo-->
+                <P>A Universidade Estadual do Tocantins adotou para a graduação, a pesquisa e a extensão, aspectos conceituais das novas abordagens da gestão e da difusão do 
+                conhecimento, das ciências gerenciais, das ciências cognitivas, das ciências da comunicação e ampliou a atuação nos campos das ciências agrárias ambientais para
+                atender a coletivos sociais.</P> <!--criação dos paragrafos-->
+                <P>A Unitins afirma a tradição pluralista e acolhedora de diferentes filosofias e convicções, estimulando o diálogo e a interdisciplinaridade de seus pares e 
+                comunidades. Isso se apoia na sua natureza cultural, científica e educacional e se expressa no ensino, na pesquisa e na extensão universitária, integrados à 
+                formação técnico-profissional, difusão da cultura e criação filosófica, científica, artística e tecnológica, de acordo com os incisos do art. 3º, no Capítulo I, 
+                do Estatuto Constitutivo da UNITINS:                
+                    <nav> <!--inserindo uma lista dentro do paragrafo-->
+                        <ol> <!--lista ordenada-->
+                            <li>A promoção do desenvolvimento harmônico e integrado da comunidade do estado do Tocantins;</li>
+                            <li>A geração, a promoção, a preservação e a difusão da cultura, estimulando o acesso do povo aos bens e aos valores culturais;</li>
+                            <li>O avanço da tecnologia para o desenvolvimento das potencialidades do Estado e de seu povo;</li>                            
+                        </ol>
+                    </nav>
+                </P>
+              <h2>Missão</h2> <!--outro titulo dentro da mesma sessão-->
+                <p>Promover a formação integral inovadora no ensino superior para contribuir com
+                 o desenvolvimento regional do Estado do Tocantins.</p>
 
-    </body>
+              <h3>Visão</h3>
+                <p>Consolidar-se, até 2027, como instituição pública do estado do Tocantins, 
+                promovendo o desenvolvimento regional por meio de práticas acadêmicas e tecnologias
+                inovadoras integradas às demandas da sociedade.</p>               
+            </div>
+        </section>
+        <section>
+            <aside> <!--só vai funcionar quando aplicar css-->
+                <h2>Navegação rápida</h2>
+                <ul>
+                    <li>
 
-    </html>
+                    </li>
+                </ul>
+            </aside>
+        </section>
+        <section> 
+            <figure>
+                <img src="../imgs/">  <!--inserir imagem-->
+                <figcaption>Descrição da imagem</figcaption>            
+            </figure>
+        </section>
+        <!--adicionar rodape, links da navegação rapida, imagens na parte dos "blocos" do site-->
+       </body>
+
+</html>
 
     
