@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Tabela e formulario</title>
+    </head>
+  <body>
+    <header> 
+        <h1>Construção de tabelas</h1>
+    </header>
+     <section>
+            <table> <!--Criação de tabela-->
+                <h2> Tabela de preços </h2>
+                <caption> Tabela </caption> <!--legenda da tabela-->
+                <thead>
+                    <tr> <!--cabeçalho da tabela-->
+                        <th> Produto </th>
+                        <th> Preço </th>
+                        <th> Informações gerais </th>
+                    </tr>    
+                </thead>
+                <tbody>
+                    <tr>
+                        <td> Laranja </td>
+                        <td> R$ 5,00 </td>
+                        <td> Laranja lima </td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr>
+                        <td> Uva </td>
+                        <td> R$ 10,00 </td>
+                        <td> Uva roxa </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section>
+            <table>
+                <h2> Planilha Financeira</h2>
+                <caption> Setembro </caption>
+                <thead> 
+                    <tr>
+                       <th> Cartao de credito </th>
+                       <th> Agua </th>
+                       <th> Energia </th>
+                       <th> Academia </th>
+                       <th> Total </th>
+                       <th> Observações </th>
+                    </tr>
+                <tbody> 
+                    <tr>
+                        <td> 2.000,00 </td>
+                        <td> 150,00 </td>
+                        <td> 300,00 </td>
+                        <td> 130,00 </td>
+                        <td>        </td>
+                        <td> Mes ok </td>
+                    </tr>
+                </tbody>
+                <tbody> 
+                    <tr>
+                        <td> 2.000,00 </td>
+                        <td> 150,00 </td>
+                        <td> 300,00 </td>
+                        <td> 130,00 </td>
+                        <td>        </td>
+                        <td> Mes ok </td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr>
+                        <td>2.000,00</td>
+                        <td>150,00</td>
+                        <td>300,00</td>
+                        <td>130,00</td>
+                        <td>      </td>
+                        <td>Mes ok</td>
+                    </tr>
+                </tbody>
+                </thead>
+            </table>
+        </section>
+
+        <!--ESTRUTURA FORMULARIO-->
+        <section>
+          <h1> Formulario de contato </h1> 
+          <form method="POST" action="contato.html"> <!-- method="POST" é para não aperecer as informações no URL-->
+            <div>                            
+              <label> Nome:</label>
+              <input type="text" name="Nome"/>
+            </div>  
+           <!-- o uso do div é pra separar,"organizar"-->
+            <div> 
+              <label> E-mail: </label>
+              <input type="email" name="emaiL"/>
+            </div>
+            <div>
+              <label> CPF:</label>
+              <input type="text" name="cpf" minlength="11" maxlength="14"/> <!-- min e max é qunanto o programa espera de caracteres escritos pelo usuario-->
+            </div>
+            <div> 
+              <label> Data de nascimento:</label>
+              <input type=""date" name="data_nascimento"/>
+            </div>
+            <div> 
+              <label> Mensagem: </label> <!--mensagem tem uma tag especifica "textarea"-->
+              <textarea name="mensagem"> </textarea>
+            </div>
+            <div> 
+              <label> login: </label>
+              <input type="text" name="login"/>
+            </div>
+            <div> 
+              <label> Senha: </label>
+              <input type="password" name="senha"/>
+            </div>
+
+          </form>
+
+           
+
+
+        </section>
+  </body>
+</html>
