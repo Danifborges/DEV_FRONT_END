@@ -1,0 +1,87 @@
+/* a{} para tags
+   .b{} para classes
+   #c{} para id's
+   
+*/
+:root {
+    --cor-primaria: #0000; /* :root{} para variáveis (padronizar cores, fontes, etc)*/
+}
+
+body{
+    background-color: #fff; /* branco */
+    margin: 0;
+}
+
+h1,h2,h3{
+    font-size: 20px;
+    text-transform: uppercase; /* transforma o texto em maiúsculo */
+}
+
+a{ 
+    text-decoration: none; /* retira o sublinhado do link (não entendi oq quis dizer, mas profesora falou que vai ser padrao)*/
+}
+
+ul li{
+    list-style-type: none; /* muda o estilo da lista ( se vai ser círculo, quadrado, etc) */
+}
+
+img{
+    max-width: 100%; /* faz a imagem se adaptar ao tamanho da tela */
+}
+
+.logo {
+    display: flex;
+    justify-content: center; /* centraliza a imagem */
+}
+
+.logo img{
+    width: 200px; /* especifico para a imagem da logo */
+}
+
+nav ul{
+    display: flex; /* deixa os itens do menu em linha */
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav li a:hover{
+    color:blue; /* muda a cor do link quando o mouse passa por cima */
+}
+
+nav li{
+    position: relative; /* para o submenu ficar em relação ao menu */
+}
+
+nav li ul{
+    display: none; /* esconde o submenu */
+    position: absolute; /* para o submenu ficar em relação ao menu */    
+}
+nav li:hover ul{
+    display: block; /* mostra o submenu quando o mouse passa por cima do menu */    
+}
+
+nav li ul li{
+    list-style-type: circle;
+    width: 100px; /* faz o submenu ter a mesma largura do menu */
+    background-color:rgb(226, 243, 255); /* muda a cor do submenu */
+    padding: 5px; /* adiciona espaço entre os itens do submenu (temos padding-top, padding-right, padding-bottom, padding-left) */
+}
+
+.banner img:hover{ /* "hover" é quando o mouse passa por cima da imagem e algo muda*/
+    opacity: 0.8; /* muda a opacidade da imagem quando o mouse passa por cima */
+
+}
+
+.article{
+    background-color: rgb(180, 180, 180);
+    padding: 10px;
+}
+
+.article h1{
+    text-align: center; /* centraliza o texto */
+}
+
+.article{
+    display: flex;
+    justify-content: space-around; 
+}
